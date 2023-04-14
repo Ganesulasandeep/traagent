@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* section 2 header */
+header {
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+background: #f55a5a;
+color: #fff;
+font-size: 2rem;
+text-transform: capitalize;
+}
+h1 > i {
+  margin-right: 1.1rem;
+}
+section {
+display: flex;
+padding: 2rem;
+max-width: 850px;
+margin: auto;
+}
+section > img {
+width: 250px;
+height: 336px;
+border-radius: 20px;
+object-fit: cover;
+margin-right: 1.1rem;
+}
+.card--element {
+padding: 1rem;
+}
+.card--element > h2 {
+  margin: 1.1rem 0;
+  line-height: 2.8rem;
+}
+.card--location {
+display: flex;
+align-items: center;
+}
+.fa-map-marker-alt {
+color: #f55a5a;
+}
+/* end section 2 header */
+.card--location > h4 {
+letter-spacing: 0.34rem;
+font-size: 1.28rem;
+font-weight: normal;
+text-transform: uppercase;
+margin: 0 0.5rem;
+}
+.card--location > a {
+font-size: 1.28rem;
+text-transform: capitalize;
+margin-left: 2rem;
+text-decoration: underline;
+}
+.card--title {
+text-transform: capitalize;
+margin-bottom: 1.55rem;
+}
+.card--date {
+font-weight: bold;
+font-size: 1.28rem;
+margin: 1.1rem 0;
+}
+.card--description {
+  color: rgb(51, 45, 45);
+font-size: 1rem;
+font-weight: 400;
+}
+@media screen and (max-width: 600px){
+  section{
+      display: block;
+  }
+  section > img {
+      width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
